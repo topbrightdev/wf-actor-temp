@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+    <PackageId>Timeplay.WheelOfFortune.Rmb.Satellite</PackageId>
+    <AssemblyName>Timeplay.WheelOfFortune.Rmb.Satellite</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.Targets" Version="3.1.0" PrivateAssets="all" />
+    <PackageReference Include="StreamSix.Actor.Rmb.Satellite" Version="1.3.0-11" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\model\model.csproj" />
+    <ProjectReference Include="..\controller\controller.csproj" />
+  </ItemGroup>
+</Project>

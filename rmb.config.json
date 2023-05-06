@@ -1,0 +1,44 @@
+{
+    "BusCommand": {
+        "Code": 1,
+        "Bus": {
+                "Name": "wheeloffortune",
+                "MotherShip": {
+                    "Limit": 100, 
+                    "Local": "127.0.0.1",
+                    "PIDTxt": "pids.txt"
+                },
+                "Listening": [{
+                    "Protocol": 1,
+                    "Param": ":7128"
+                }, {
+                    "Protocol": 2,
+                    "Param": ":7129"
+                }],
+                "Embedded":{
+                    "uri":"127.0.0.1:9025"
+                }
+        },
+        "IntValue":0
+    },
+    "auth": {
+        "url": "https://stg-auth.timeplay.com/auth",
+        "client_id": "tp-user",
+        "client_secret": "password"
+    },
+    "entity": {
+        "url": "https://sagames-dev-api.streamsix.com/entity-manager"
+    },
+    "leaderboard": {
+        "url": "https://sagames-dev-api.streamsix.com/leaderboards"
+    },
+    "inventory": {
+        "url": "https://sagames-dev-api.streamsix.com/inventory-service"
+    },
+    "web": {
+        "port": 9999,
+        "jwks_urls": ["https://stg-auth.timeplay.com/auth/realms/Users/protocol/openid-connect/certs"]
+    },
+    "license": "1afa0b5c-ef64-4c1f-9ee2-c334fed29c0b",
+    "license_url": "https://sagames-dev-ss.timeplay.tv/gls"
+}

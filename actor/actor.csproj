@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+    <PackageId>Timeplay.WheelOfFortune.Actor</PackageId>
+    <AssemblyName>Timeplay.WheelOfFortune.Actor</AssemblyName>
+    <PublishWithAspNetCoreTargetManifest>False</PublishWithAspNetCoreTargetManifest>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\satellite\satellite.csproj" />
+    <ProjectReference Include="..\mothership\mothership.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="log4net.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

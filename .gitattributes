@@ -1,0 +1,3 @@
+* text=crlf
+*.cs     diff=csharp
+*.py     diff=python
